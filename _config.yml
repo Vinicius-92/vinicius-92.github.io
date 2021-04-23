@@ -1,5 +1,5 @@
 title: Vinicius Augusto
-baseurl: vinicius-92.github.io
+baseurl: 
 permalink: '/:title/'
 collections:
   posts:
@@ -7,9 +7,9 @@ collections:
 layout_style: overflow
 palette: blue
 header:
-  title: Stackbit Fresh
-  tagline: Header Tagline
-  profile_img: images/avatar.png
+  title: Vinicius Augusto
+  tagline: Junior Java Developer
+  profile_img: images/avatar.jpeg
   profile_img_alt: Author avatar
   background: dark
   has_nav: true
@@ -20,49 +20,35 @@ header:
     - label: Blog
       url: /blog/
       style: link
-    - label: Style Guide
-      url: /style-guide/
-      style: link
-    - label: About
-      url: /about/
-      style: link
-    - label: Contact
+    - label: Contato
       url: /contact/
       style: link
   has_social: true
   social_links:
     - label: Twitter
-      url: 'https://twitter.com/'
+      url: 'https://twitter.com/antivinicius'
       style: icon
       icon_class: twitter
       new_window: true
     - label: Instagram
-      url: 'https://www.instagram.com/'
+      url: 'https://www.instagram.com/vinicius_aug'
       style: icon
       icon_class: instagram
       new_window: true
     - label: GitHub
-      url: 'https://github.com/'
+      url: 'https://github.com/vinicius-92'
       style: icon
       icon_class: github
       new_window: true
     - label: LinkedIn
-      url: 'https://www.linkedin.com/'
+      url: 'https://www.linkedin.com/in/vinicius-92'
       style: icon
       icon_class: linkedin
       new_window: true
-    - label: DEV
-      url: 'https://dev.to/'
-      style: icon
-      icon_class: dev
-      new_window: true
+
 footer:
   content: >-
-    &copy; Stackbit. All rights reserved. This Jamstack site was created with <a
-    href="https://www.stackbit.com/?utm_source=deployed-footer" target="_blank"
-    rel="noopener">Stackbit</a>. Create yours <a
-    href="https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer"
-    target="_blank" rel="noopener">now</a>
+    
 sass:
   indentWidth: 4
   style: nested

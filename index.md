@@ -4,33 +4,31 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: 'Hi, I''m Stackbit Fresh.'
+    title: ''
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      Desenvolvedor de software junior com foco em desenvolvimento utilizando Java, Spring e Postgres. 
   - section_id: about
     type: section_content
-    title: About
+    title: Sobre mim
     content: >-
-      This is the "about" excerpt. It can be used to provide a paragraph about
-      yourself that people can read on the homepage to get a sense of who you
-      are. There also exists a dedicated about page where you can write more
-      about yourself for those who are interested.
+        Tenho 29 anos, graduando em Análise e Desenvolvimento de Sistemas. Sou apaixonado por tecnologia em todas as suas formas, também por Linux, café e filmes de terror.
+        Estou em busca do conhecimento necessário para conseguir minha primeira vaga na área, ao longos dos últimos anos trabalhei com diversos ramos de atividades, me trazendo uma grande bagagem de conhecimentos para além dos conhecimentos relacionados a tecnologia, de fotografia e vendas, à gerenciamento de um e-commerce.
+        Apaixonado por aprender, consumidor de livros e conteúdo de diversas formas, sejam em português ou inglês, estou sempre disposto a aprender coisas novas.
     actions:
-      - label: Contact Me
+      - label: Entre em contato
         url: /contact
         style: button
   - section_id: recent-posts
     type: section_posts
-    title: Recent Posts
-    posts_number: 4
+    title: Postagens recentes
+    posts_number: 2
     actions:
-      - label: View Blog
+      - label: Ir para o blog
         url: blog/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
-  description: The preview of the Fresh theme
+  title: Vinicius Augusto
+  description: Site profissional e blog
   extra:
     - name: 'og:type'
       value: website
@@ -48,9 +46,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Fresh Theme
+      value: Twitter pessoal
     - name: 'twitter:description'
-      value: The preview of the Fresh theme
+      value: Twitter pessoal
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
