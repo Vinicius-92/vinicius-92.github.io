@@ -1,5 +1,6 @@
 title: Vinicius Augusto
-baseurl: 
+baseurl: ""
+url: "https://vinicius-92.github.io"
 permalink: '/:title/'
 collections:
   posts:
