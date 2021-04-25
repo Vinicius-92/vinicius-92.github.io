@@ -1,84 +1,92 @@
-title: Stackbit Fresh Theme
-baseurl: /
-permalink: '/:title/'
+# Site settings
+title: Klise Theme # site title
+description: >- # site description
+  He's writing in Bahasa about web technology and experience as a journal 
+  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
+lang: en-US # default lang
+timezone: Asia/Jakarta # set your timezone
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Jekyll Klisé # author name
+  bio: >- # tell to the world
+    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
+    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+  username: username # general username
+  github: github_username # github username
+  twitter: twitter_username # twitter username
+  facebook: facebook_username # facebook username
+  email: your-email@email.com # email adress
+  avatar: /assets/img/avatar.jpg # change with your own avatar
+
+# URL settings
+url: "https://klise.now.sh" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if not wish
+fb_appid:
+
+# Collection setting
 collections:
   posts:
-    permalink: '/posts/:title/'
-layout_style: overflow
-palette: blue
-header:
-  title: Stackbit Fresh
-  tagline: Header Tagline
-  profile_img: images/avatar.png
-  profile_img_alt: Author avatar
-  background: dark
-  has_nav: true
-  nav_links:
-    - label: Home
-      url: /
-      style: link
-    - label: Blog
-      url: /blog/
-      style: link
-    - label: Style Guide
-      url: /style-guide/
-      style: link
-    - label: About
-      url: /about/
-      style: link
-    - label: Contact
-      url: /contact/
-      style: link
-  has_social: true
-  social_links:
-    - label: Twitter
-      url: 'https://twitter.com/'
-      style: icon
-      icon_class: twitter
-      new_window: true
-    - label: Instagram
-      url: 'https://www.instagram.com/'
-      style: icon
-      icon_class: instagram
-      new_window: true
-    - label: GitHub
-      url: 'https://github.com/'
-      style: icon
-      icon_class: github
-      new_window: true
-    - label: LinkedIn
-      url: 'https://www.linkedin.com/'
-      style: icon
-      icon_class: linkedin
-      new_window: true
-    - label: DEV
-      url: 'https://dev.to/'
-      style: icon
-      icon_class: dev
-      new_window: true
-footer:
-  content: >-
-    &copy; Stackbit. All rights reserved. This Jamstack site was created with <a
-    href="https://www.stackbit.com/?utm_source=deployed-footer" target="_blank"
-    rel="noopener">Stackbit</a>. Create yours <a
-    href="https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer"
-    target="_blank" rel="noopener">now</a>
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
+
+# Build settings
+# theme: klise
 sass:
-  indentWidth: 4
-  style: nested
-  precision: 10
-plugins:
-  - jekyll-menus
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
+  - LICENSE
+  - CHANGELOG.md
   - README.md
-  - netlify.toml
-  - stackbit-build.sh
-  - stackbit-pull.js
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
